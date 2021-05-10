@@ -114,3 +114,14 @@ hr:not([size]) {
     text-decoration: none;
 }
 
+.portfolio{
+    height: 20%;
+    width: auto;
+    padding: 30px;
+}
+
+.taille{
+    padding: 30px;
+    height: 10%;
+    width: 10%;
+}
