@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(220, 230, 230);
+    background-color: rgb(255, 255, 255);
 }
 
 .ble {
@@ -43,10 +43,6 @@ body{
     color: aquamarine;
     border: 3px aquamarine solid;
     padding: 3px;
-}
-
-.e{
-    color: aquamarine;
 }
 
 .boiteTexteHeader {
@@ -126,7 +122,31 @@ hr:not([size]) {
     width: 20%;
 }
 
+.bloc3{
+    background-color: rgb(255, 255, 255);
+}
+
+
 .taille{
     width: 100%;
     height: 100%;
+}
+
+
+.serviceBas {
+    height: auto;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.disposition{
+    padding-top: 10%;
+}
+
+.bloc4{
+    background-color: darkviolet;
+}
+
+.blanc{
+    color: white;
 }
