@@ -1,0 +1,126 @@
+body{
+    background-color: rgb(220, 230, 230);
+}
+
+.ble {
+    height: 100vh;
+    position: relative;
+}
+
+.ble::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/ble.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(90%);
+    z-index:-1;
+}
+
+.barreNav {
+    height: 20%;
+    background-color: rgba(0, 0, 0, 0.596);
+    display: flex;
+    align-items: center;
+}
+
+.leReste {
+    height: 80%;
+}
+
+.lienNav {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.boiteTexteHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.boiteTexteHeader>h2 {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.596);
+}
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logoEtMenu {
+    justify-content: space-evenly;
+}
+
+
+
+.title{
+    padding: 30px;
+    color: white;
+}
+
+hr:not([size]) {
+    width: 48px;
+    height: 5px;
+    color: white;
+}
+
+.titleService{
+    color: white;
+    margin-top: 20px;
+}
+
+.paragraphe{
+    color: white;
+    margin-top: 20px;
+}
+
+.bloc2{
+    background-color: rgb(16, 197, 197);
+}
+
+.serviceFond {
+    height: auto;
+    position: relative;
+    
+    
+}
+
+.fond{
+    background-color: white;
+}
+
+.barreNav2 {
+    height: 30%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+}
+
+.lienNav2 {
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.logoEtMenu2{
+    height: 30px;
+}
+
+.portfolio  {
+    height: 190px;
+    height: 190px;;
+}
+
+.case{
+    height: 190px;
+    height: auto;  
+}
