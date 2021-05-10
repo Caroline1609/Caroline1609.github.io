@@ -39,6 +39,16 @@ body{
     text-decoration: none;
 }
 
+.cadre{
+    color: aquamarine;
+    border: 3px aquamarine solid;
+    padding: 3px;
+}
+
+.e{
+    color: aquamarine;
+}
+
 .boiteTexteHeader {
     display: flex;
     flex-direction: column;
@@ -59,8 +69,6 @@ body{
 .logoEtMenu {
     justify-content: space-evenly;
 }
-
-
 
 .title{
     padding: 30px;
@@ -90,37 +98,18 @@ hr:not([size]) {
 .serviceFond {
     height: auto;
     position: relative;
-    
-    
+    padding-bottom: 50px;
 }
 
-.fond{
-    background-color: white;
-}
-
-.barreNav2 {
-    height: 30%;
+.barreNavBas {
+    padding: 2%;
     background-color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
 }
 
-.lienNav2 {
+.lienNavBas{
     color: rgb(0, 0, 0);
     font-weight: bolder;
     text-decoration: none;
-}
-
-.logoEtMenu2{
-    height: 30px;
-}
-
-.portfolio  {
-    height: 190px;
-    height: 190px;;
-}
-
-.case{
-    height: 190px;
-    height: auto;  
 }
