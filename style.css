@@ -5,32 +5,61 @@ body{
     background-image: url(https://ns328286.ip-37-187-113.eu/ew/wallpapers/800x480/03731_800x480.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    max-width: 100%;
+    height: auto;
 }
 
-.container{
-    margin-right: 20%;
-    margin-left: 20%;
+.container-sm{
     text-align: center;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     opacity: 80%;
+}
+
+hr {
+    color: red;
+    background-color: currentColor;
+    border: 0;
+    opacity: .25;
 }
 
 .title{
     padding: 30px;
-    color:#E823BF;
+    color:#05b8ff;
+    font-size: 25px;
+}
+
+.titleH2{
+    padding: 30px;
+    color:#6157ec;
+    font-size: 20px;
 }
 
 .présentation{
-    padding: 30px;
-    font-size: 30px;
+    padding: 80px;
+    font-size: 20px;
+    color: rgb(0, 89, 255);
 }
 
 .list{
-    font-size: 25px;
-    margin: 20px;
+    font-size: 20px;
+    margin: 30px;
+}
+
+.li{
+    padding: 20px;
 }
 
 .explication{
     padding: 40px;
     color: red;
 }
+
+a {
+    text-decoration: none;
+    color: rgb(237, 124, 252); 
+}
+
+a:hover {
+    color: red;
+}
+
