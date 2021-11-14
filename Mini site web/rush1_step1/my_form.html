@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
+    
+    <title>Rush</title>
+</head>
+
+<body>
+        <div class ="box">
+            <ul id="nav">
+                <li><a href="#">Formulaire ( rush1_step1/)</a></li>
+                <li><a href="#">S'inscrire</a></li>
+                <li><a href="#">S'identifier</a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class= "date">
+                <br><h5>Formulaire</h5>
+            </div>
+            <div class="genre">
+                <p>Sexe</p>
+            </div>
+            <div class="civilite"> 
+                <input type="radio" id="huey" name="drone" value="huey"
+                    checked>
+                <label for="huey">Homme</label>
+                </div>
+                <div>
+                <input type="radio" id="dewey" name="drone" value="dewey">
+                <label for="dewey">Femme</label>
+                </div>
+                <div>
+                <input type="radio" id="louie" name="drone" value="louie">
+                <label for="louie">Autre</label>
+            </div>
+            <br>
+            <div class="civilite">
+                <label for="pet-select">Civilité :</label><br>
+                <select name="pets" id="pet-select">
+                    <option value="">choisir</option>
+                    <option value="M.">M.</option>
+                    <option value="Mme.">Mme.</option>
+                </select>
+            </div>
+            <br>
+            <div class="name">
+                <label for="name">Nom (4 ou 8 caractères):</label><br>
+                <input type="text" id="name" name="name" required
+                minlength="4" maxlength="8" size="10">
+            </div>
+            <br>
+            <div class="email">
+                <label for="email">Entrer votre email:</label><br>
+                <input type="email" id="email"
+                pattern=".+@globex\.com" size="30" required>
+            </div>
+            <br>
+            <div class="tel">
+                <label for="phone">Numéros de téléphone:</label><br>
+                <input type="tel" id="phone" name="phone"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                required><br>
+                <small>Format: 06-XX-XX-XX-XX</small>
+            </div>
+            <br>
+            <div class="url">
+                <label for="url">Entrer un URL:</label><br>
+                <input type="url" name="url" id="url"
+        placeholder="https://example.com"
+        pattern="https://.*" size="30"
+                required>
+            </div>
+            <br>
+            <div class="naissance">
+                <label for="start">Entrer date de naissance</label><br>
+                <input type="date" id="start" name="trip-start"
+                        value="14/11/2021"
+                        min="2018-01-01" max="2018-12-31">
+            </div>
+            <br>
+            <div class="hobby">
+                <p>hobbys:</p>
+            <div>
+            <input type="checkbox" id="Jeux_video" name="Jeux_video"
+                    checked>
+            <label for=": Jeux_video">: Jeux video</label>
+            </div>
+            <div>
+                <input type="checkbox" id="Cinema" name="Cinema">
+                <label for="Cinema">Cinema</label>
+            </div>
+            <div>
+                <input type="checkbox" id="Lecture" name="Lecture">
+                <label for="Lecture">Lecture</label>
+            </div>
+            <div>
+                <input type="checkbox" id="Sport" name="Sport">
+                <label for="sport">Sport</label>
+            </div>
+            <div>
+                <input type="checkbox" id="Informatique" name="Informatique">
+                <label for="Informatique">Informatique</label>
+            </div>
+            <div class= "button_list">
+                <a href="#" class="button">Validation</a>
+            </div>  
+                    </div>
+
+</body>
+</html>
