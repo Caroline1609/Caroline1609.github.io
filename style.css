@@ -1,5 +1,6 @@
 body{
     font-family: 'Lobster', cursive;
+    margin-top: 50%;
     margin: 0;
     padding: 0%;
     background-image: url(https://ns328286.ip-37-187-113.eu/ew/wallpapers/800x480/03731_800x480.jpg);
@@ -11,8 +12,15 @@ body{
 
 .container-sm{
     text-align: center;
-    background-color: rgb(255, 255, 255);
-    opacity: 80%;
+    background-color: rgb(46, 3, 40);
+    opacity: 60%;
+    border-radius: 200px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+h1{
+    color: rgb(245, 57, 213);
 }
 
 hr {
