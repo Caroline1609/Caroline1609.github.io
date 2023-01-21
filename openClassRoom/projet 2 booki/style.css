@@ -1,0 +1,302 @@
+body{
+    margin: 0;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 19px;
+}
+
+.logo{
+    width: 102px;
+    height: 19px;
+}
+
+.navbar {
+    display: flex;
+}
+
+.nav-link:hover {
+    padding-top: 22px;
+    border-top: 2px solid rgba(0, 101, 252, 1);
+    color: #0065fc;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    margin-left: 40px;
+    list-style: none;
+}
+
+main{
+    margin: 19px;
+}
+
+.title{
+    margin : 0;
+}
+
+.contenaire_formulaire{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    flex-wrap: nowrap
+}
+
+.formulaire{
+    display: flex;
+}
+
+.border{
+    border: solid 1px #F2F2F2;
+    padding: 15px;
+    border-radius: 30px 0px 0px 30px;
+}
+
+.champ {
+    border: solid 1px #F2F2F2;
+    padding: 15px;
+}
+
+
+
+.button{
+    padding: 15px;
+    border-radius: 0px 30px 30px 0px;
+    border: solid 1px #F2F2F2;
+    background-color: #0065FC;
+    color: white;
+}
+
+.icon {
+    background: #F2F2F2;
+    border: 1px solid #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+    width: 50px;
+    height: 40px;
+    padding-top: 14px;
+}
+
+.fa-solid {
+    color: #000000;
+}
+
+.fa-icon {
+    font-size: 1.5em;
+    color:#0065fc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.titrefiltres {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.filtre {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin-top: 50px;
+}
+
+.nom {
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 12px;
+    margin: 0px 20px 15px 15px;
+    display: flex;
+    align-items: center;
+}
+
+.choixfiltre {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 8px;
+    margin-left:30px;
+    border: 3px solid #D9D9D9;
+    border-radius: 35px;
+    
+}
+
+.choixfiltre:hover {
+    background-color: #DEEBFF;
+}
+
+.info{
+    margin-left: 5px;
+}
+
+.info1{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+  
+.info-section h2{
+    margin-left: 10px;
+    font-size: 106%;
+    font-weight: 300;
+    color: rgb(59, 59, 59);
+}
+
+
+.hebergements{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/*grille 75 car le bloque représente 75% de la largeur*/
+
+.grille75{
+    border-radius: 20px;
+    background-color: #F2F2F2;
+    margin-right: 30px;
+    padding: 20px 40px 10px 40px;
+    width: 75%;
+}
+
+/*grille 25 car le bloque représente 25% de la largeur*/
+
+.grille25{
+    border-radius: 20px;
+    background-color: #F2F2F2;
+    padding: 20px 40px 10px 40px;
+    width: 25%;
+}
+
+.grille3{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.vignetteHotel{
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 35px #dadada;
+    padding: 5px;
+    padding-bottom: 8px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    width: 33%;
+}
+
+.vignetteHotel:hover{
+    transition: 0.1s ease-in-out;
+    transform: scale(1.03);
+    box-shadow: 0px 0px 35px #2727278e;
+    background-color: hsl(216, 100%, 94%);
+}
+
+.imageHebergements{
+    height: 125px;
+    width: 130px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+}
+
+img{
+    width: 100%;
+
+}
+
+.forme{
+    width: 300px;
+    height: 130px;
+    border-radius: 30px 30px 0px 0px;
+}
+
+.forme2{
+    width: 155px;
+    height: 139px;
+    border-radius: 30px 0px 0px 30px;
+}
+
+.texteVignette{
+    margin-top: -10px;
+    margin-left: 45px;
+    font-size: 0.9em;
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    width: 60%;
+}
+
+.texteVignette p{
+    margin-top: -12px;
+    margin-bottom: 8px;
+}
+
+.texteTexte{
+    margin-bottom: auto;
+}
+
+.fa-chart-line{
+    font-size: 1.5em;
+}
+
+.imageVignetteGauche{
+    width: 40%;
+    height: 140px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 0 0 15px;
+}
+
+.vignetteGauche{
+    display: flex;
+    padding-bottom: 5px;
+    margin-right: 0px;
+    max-height: 140px;
+    width: auto;
+}
+
+.starblue{
+    color: #0065FC;
+}
+
+.stargrey{
+    color: #F2F2F2;
+}
+
+.img2{
+    height: 30px;
+}
+
+.containerCard{
+    display: flex;
+    flex-direction: row;
+}
+
+.card {
+width: 40%;
+
+}
+
+.card:hover {
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+padding: 2px 16px;
+}
