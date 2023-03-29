@@ -3,9 +3,7 @@ body{
     margin-top: 50%;
     margin: 0;
     padding: 0%;
-    background-image: url(https://ns328286.ip-37-187-113.eu/ew/wallpapers/800x480/03731_800x480.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: #6157ec;
     max-width: 100%;
     height: auto;
 }
