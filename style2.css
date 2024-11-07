@@ -1,28 +1,73 @@
 body{
     font-size: 17px;
-    font-family: 'roboto', condensed;
-    background-image: url(https://img.freepik.com/photos-gratuite/jetee-au-bord-lac-hallstatt-autriche_181624-44201.jpg);
-    background-attachment: fixed;
-    background-size: cover;
+    font-family: 'Quicksand', cursive;
     padding: 0;
     margin: 0;
-    display: flex;
-    justify-content: center;
+    background-color: rgb(100, 93, 93);
+
+}
+
+.accueil{
     
-}
-
-.container{
+    background-image: url(https://www.fond-ecran-hd.net/Public/uploads/2019-01-14/1620.jpg);
     text-align: center;
+    background-attachment: fixed;
+    background-size: cover;
     padding: 60px;
-    background-color: white;
-    width: 50%;
-    margin-top : 5%;
+
+}
+
+.heart-list{
     display: flex;
-    flex-direction: column;
-}
-
-.gif, img{
-    border-radius: 50% 20% / 10% 40%;
+    align-items: flex-start;
+    justify-content: center;
 
 }
+.identification{
+    margin : 10px;
+}
 
+.reseau img{
+    width: 50px;
+    height: 50px;
+}
+
+.box{
+    width : 1200px;
+    margin : auto;
+    padding: 30px;
+}
+
+#nav {
+    padding: 0;
+    margin: 0;
+    font-size : 15px;
+    margin-left: 130px;
+    margin-right: 130px;
+}
+
+#nav li {
+    display: inline;
+    list-style: none;
+}
+
+#nav a {
+    display:inline-block;
+    margin: 0 20px;
+    color: white;
+    font-family: 'Graduate', cursive;
+}
+
+.nom{
+    color:white;
+    text-align : center;
+}
+
+.Apropos{
+    margin-top: 10rem;
+    color: white;
+}
+
+p{
+    font-size: 25px;
+}
