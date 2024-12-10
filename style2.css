@@ -3,19 +3,20 @@ body{
     font-family: 'Quicksand', cursive;
     padding: 0;
     margin: 0;
-    background-color: rgb(100, 93, 93);
     background-image: url(https://www.fond-ecran-hd.net/Public/uploads/2019-01-14/1620.jpg);
     background-attachment: fixed;
     background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color : white;
+
+    
 }
 
 .accueil{
-    
-    
     text-align: center;
-    
     padding: 60px;
-
 }
 
 .heart-list{
@@ -59,16 +60,40 @@ body{
     font-family: 'Graduate', cursive;
 }
 
+.porfolio{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 5%;
+    
+}
+
+.nom, h1{
+    text-align: center;
+}
+
 .nom{
     color:white;
     text-align : center;
 }
 
+.nom, h2{
+    text-align: justify;
+}
+
 .Apropos{
-    margin-top: 10rem;
     color: white;
+    width: 50%;
+
 }
 
 p{
-    font-size: 25px;
+    
+    font-size: 20px;
+}
+
+.projects{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
