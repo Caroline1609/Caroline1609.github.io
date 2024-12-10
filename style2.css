@@ -4,15 +4,16 @@ body{
     padding: 0;
     margin: 0;
     background-color: rgb(100, 93, 93);
-
+    background-image: url(https://www.fond-ecran-hd.net/Public/uploads/2019-01-14/1620.jpg);
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .accueil{
     
-    background-image: url(https://www.fond-ecran-hd.net/Public/uploads/2019-01-14/1620.jpg);
+    
     text-align: center;
-    background-attachment: fixed;
-    background-size: cover;
+    
     padding: 60px;
 
 }
