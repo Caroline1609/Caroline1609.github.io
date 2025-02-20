@@ -17,18 +17,15 @@ body{
     padding: 60px;
 }
 
-.heart-list{
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-
+a{
+    margin : 10px
 }
+
 .identification{
     margin : 10px;
 }
 
 .reseau img{
-    width: 50px;
     height: 50px;
 }
 
