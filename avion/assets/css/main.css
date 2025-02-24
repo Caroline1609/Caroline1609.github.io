@@ -82,8 +82,8 @@ footer {
     table th,
     td{
         overflow-wrap: anywhere;
-        font-size: 8px;
-        padding: 4px;
+        font-size: 4px;
+        padding: 3px;
     }
 
         
