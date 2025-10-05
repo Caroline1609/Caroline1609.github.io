@@ -4,25 +4,31 @@ body {
   padding: 0;
   background-color: #f7f9fc;
   color: #333;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 header {
-  background-color: #1e293b;
+  background-color: #fc47da;
   color: white;
   text-align: center;
   padding: 1rem;
 }
+
 nav a {
   color: white;
   text-decoration: none;
   margin: 0 10px;
 }
+
 nav a:hover {
   text-decoration: underline;
 }
+
 section {
   padding: 2rem;
   text-align: center;
 }
+
 .projets {
   display: flex;
   flex-wrap: wrap;
@@ -30,6 +36,7 @@ section {
   justify-content: center;
   margin-top: 2rem;
 }
+
 .carte {
   display: block;
   width: 220px;
@@ -41,22 +48,26 @@ section {
   color: #222;
   transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
 }
+
 .carte:hover, .carte:focus {
   transform: translateY(-8px) scale(1.03);
   box-shadow: 0 6px 24px rgba(0,0,0,0.15);
   background: #f0f8ff;
   color: #0077cc;
 }
+
 .carte h3 {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-size: 1.2rem;
 }
+
 .carte p {
   margin: 0;
   font-size: 1rem;
   color: #444;
 }
+
 form {
   display: flex;
   flex-direction: column;
@@ -65,12 +76,14 @@ form {
   max-width: 400px;
   margin: auto;
 }
+
 input, textarea {
   width: 100%;
   padding: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
+
 button {
   background-color: #2563eb;
   color: white;
@@ -79,16 +92,20 @@ button {
   border-radius: 5px;
   cursor: pointer;
 }
+
 button:hover {
   background-color: #1d4ed8;
 }
+
 footer {
-  background-color: #1e293b;
+  background-color: #fc47da;
   color: white;
   text-align: center;
   padding: 1rem;
   margin-top: 2rem;
 }
+
+
 @media (max-width: 600px) {
   .projets {
     flex-direction: column;
