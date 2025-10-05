@@ -25,20 +25,37 @@ section {
 }
 .projets {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
 }
 .carte {
-  background-color: white;
-  border-radius: 10px;
-  padding: 1rem;
-  width: 250px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: block;
+  width: 220px;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  text-decoration: none;
+  color: #222;
+  transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
 }
-.carte:hover {
-  transform: scale(1.03);
-  transition: 0.3s;
+.carte:hover, .carte:focus {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.15);
+  background: #f0f8ff;
+  color: #0077cc;
+}
+.carte h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+.carte p {
+  margin: 0;
+  font-size: 1rem;
+  color: #444;
 }
 form {
   display: flex;
