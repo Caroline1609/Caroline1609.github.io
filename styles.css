@@ -76,7 +76,8 @@ section h2 {
 
 
 .carte {
-  display: block;
+  display: flex;
+  flex-direction: column;
   width: 290px;
   border: none;
   border-radius: 20px;
@@ -208,9 +209,10 @@ footer {
   color: #d291bc;
 }
 .carte .delai {
+  margin-top: auto;
+  margin-bottom: 0.7em;
   display: flex;
   align-items: center;
-  margin-bottom: 0.7em;
 }
 .carte-img {
   width: 100%;
@@ -220,6 +222,10 @@ footer {
   margin-bottom: 0.8em;
   box-shadow: 0 2px 8px #d291bc22;
   display: block;
+}
+.carte,
+.carte * {
+  text-decoration: none !important;
 }
 
 
