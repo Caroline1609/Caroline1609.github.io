@@ -1,3 +1,12 @@
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --card-media-height: 220px; /* valeur par défaut desktop */
+}
+
 body {
   background: linear-gradient(135deg, #fbeff5 0%, #f7e6f7 100%);
   font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
@@ -82,17 +91,21 @@ section h2 {
 }
 
 .projets {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 3rem;
-  justify-content: center;
+  /* 2 cartes par ligne par défaut */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+  justify-items: stretch;
+  align-items: stretch; /* force les cartes à s'étirer et à avoir la même hauteur sur une même ligne */
   margin-top: 2rem;
 }
 
 .carte {
   display: flex;
   flex-direction: column;
-  width: 34%;
+  /* en grid, la largeur est contrôlée par la grille ; laisser la carte remplir sa cellule */
+  width: auto;
+  height: 100%; /* remplir la hauteur de la ligne de grille pour uniformiser */
   border: none;
   border-radius: 20px;
   padding: 2em;
@@ -102,6 +115,7 @@ section h2 {
   position: relative;
   overflow: visible;
   text-decoration: none !important;
+  cursor: pointer;
 }
 
 .carte::before {
@@ -124,7 +138,7 @@ section h2 {
 
 .carte-media, .carte-img, .carte-iframe {
   width: 100%;
-  height: 150px;
+  height: var(--card-media-height);
   object-fit: cover;
   border-radius: 12px;
   margin-bottom: 0.8em;
@@ -133,8 +147,16 @@ section h2 {
   display: block;
   border: none;
 }
+.carte-iframe { pointer-events: none; /* rendre l'iframe non-interactive pour que le clic cible l'<a> parent */ }
 .carte:hover .carte-media, .carte:hover .carte-img, .carte:hover .carte-iframe {
   transform: scale(1.03);
+}
+
+/* focus visible pour accessibilité clavier */
+.carte:focus-visible {
+  outline: 3px solid rgba(215,81,130,0.18);
+  outline-offset: 4px;
+  border-radius: 20px;
 }
 
 .carte h3 {
@@ -197,12 +219,15 @@ section h2 {
   font-size: 0.95em;
 }
 .type-projet .icon { color: #7b5ca3; font-size: 1em; }
-.annee-projet .icon { color: #d9776b; font-size: 1em; }
+.annee-projet .icon {
+    color: #d9776b;
+    font-size: 1em;
+}
 
-/* espacement interne des blocs d'info pour meilleure lisibilité */
+
 .bloc-info { padding: 0.5em 0.7em; }
 
-/* réduire hauteur du badge-contexte pour compacité */
+
 .badge-contexte { padding: 0.2em 0.7em; font-size: 0.9em; }
 
 .mission strong, .sujet strong, .technologies strong {
@@ -249,19 +274,21 @@ footer {
     max-width: 90%;
     padding: 2rem 1.2rem;
   }
-  .carte {
-    width: 90%;
-  }
+  /* passer à une seule colonne sous 900px */
+  .projets { grid-template-columns: 1fr; }
+  .carte { width: 100%; }
+  :root { --card-media-height: 180px; }
 }
 
 @media (max-width: 600px) {
   .projets {
-    flex-direction: column;
-    align-items: center;
+    grid-template-columns: 1fr;
+    justify-items: center;
   }
   header h1 {
     font-size: 2rem;
   }
+  :root { --card-media-height: 140px; }
   nav a {
     margin: 0 0.8rem;
     font-size: 1rem;
