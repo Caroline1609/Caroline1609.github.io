@@ -3,245 +3,295 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mon Portfolio</title>
+  <title>Portfolio BIEHLER Caroline</title>
   <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Portfolio de Caroline Biehler, développeuse web front-end spécialisée en HTML, CSS et Bootstrap." />
 </head>
 <body>
-  <header>
-    <h1>Mon Portfolio</h1>
-    <nav>
-      <a href="#projets">Mes Réalisations</a>
-      <a href="#a-propos">À propos</a>
-    </nav>
+  <!-- Hero section avec présentation -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Caroline Biehler</h1>
+      <p class="hero-tagline">Développeuse Web Front-end</p>
+      <div class="hero-links">
+        <a href="#projets" class="primary-btn">Voir mes projets</a>
+        <a href="Projets/Cv/index.html" class="secondary-btn">Mon CV détaillé</a>
+      </div>
+    </div>
   </header>
 
-  <section id="a-propos">
-    <h2>À propos</h2>
-    <p>Je suis développeuse web débutante. J’aime créer des sites simples et élégants.</p>
+  <!-- Section À propos avec compétences -->
+  <section id="a-propos" class="intro-section">
+    <div class="intro-content">
+      <h2>À propos</h2>
+      <p class="intro-text">
+        Développeuse web passionnée par la création d'interfaces élégantes et intuitives.
+      </p>
+      <div class="competences">
+        <div class="skill-group">
+          <h3>Technologies maîtrisées</h3>
+          <div class="skills">
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">Bootstrap</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">Responsive Design</span>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
+  <!-- Portfolio de projets -->
   <section id="projets">
-    <h2>Mes Réalisations</h2>
-    <div class="projets">
+    <div class="projets-header">
+      <h2>Portfolio de Projets</h2>
+      <nav class="projet-navigation">
+        <a href="#projets-2025" class="nav-link">2025</a>
+        <a href="#projets-2023" class="nav-link">2023</a>
+        <a href="#projets-2021" class="nav-link">2021</a>
+      </nav>
+    </div>
 
-      <!-- 2025 -->
-      <a href="Projets/euro-express-project-02-2025/index.html" class="carte">
-        <iframe class="carte-iframe" src="Projets/euro-express-project-02-2025/index.html" title="Aperçu de Euro-express" loading="lazy"></iframe>
-        <h3>Plateforme de réservation Euro express</h3>
-        <div class="bloc-info annee-projet">
-          <span class="icon">📅</span>
-          <div><strong>Année :</strong> 2025</div>
-        </div>
-        <span class="badge-contexte">Contexte : Projet réalisé pour l’agence « Les Avengers du Dev » Développer les fonctionnalités principales d’un projet client avant leur intégration par le Lead Developer.</span>
-        <div class="bloc-info sujet">
-          <span class="icon">📄</span>
-          <div><strong>Sujet :</strong> Création d’un prototype de site de réservation pour trains hypersoniques depuis Paris vers six destinations. Mise en place des pages HTML/CSS, développement des classes Java pour la gestion des réservations, calcul automatique des tarifs et stockage des données.</div>
-        </div>
-        <div class="bloc-info type-projet">
-          <span class="icon">👥</span>
-          <div><strong>Modalité :</strong> En équipe (4 dev)</div>
-        </div>
-        <div class="bloc-info mission">
-          <span class="icon">🎯</span>
-          <div>
-            <strong>Mes Missions :</strong>
-            <ul>
-              <li>Intégrer les pages principales en HTML/CSS et gérer la responsive.</li>
-            </ul>
+    <!-- 2025 -->
+    <div id="projets-2025" class="projet-annee">
+      <h3 class="annee-title">2025</h3>
+      <div class="projets">
+      <!-- 2025 - Euro Express -->
+      <a href="Projets/euro-express-project-02-2025/index.html" class="carte" data-year="2025" data-type="equipe">
+        <div class="carte-header">
+          <iframe class="carte-iframe" src="Projets/euro-express-project-02-2025/index.html" title="Aperçu de Euro-express" loading="lazy"></iframe>
+          <div class="carte-badges">
+            <span class="tag-year">2025</span>
+            <span class="tag-type">En équipe · 4 dev</span>
+            <span class="tag-duration">3 jours</span>
           </div>
         </div>
-        <div class="bloc-info technologies">
-          <span class="icon">👨‍💻</span>
-          <div><strong>Technologies :</strong> HTML, CSS</div>
-        </div>
-        <div class="delai">
-          <span class="icon">⏳ Délais de réalisation : </span> 3 jours
+        <div class="carte-content">
+          <h3>Euro Express</h3>
+          <div class="bloc-info contexte">
+            <span class="icon">📋</span>
+            <div><strong>Contexte :</strong> Projet réalisé pour l'agence « Les Avengers du Dev » - Développer les fonctionnalités principales d'un projet client avant leur intégration par le Lead Developer.</div>
+          </div>
+          <div class="bloc-info sujet">
+            <span class="icon">📄</span>
+            <div><strong>Sujet :</strong> Création d'un prototype de site de réservation pour trains hypersoniques depuis Paris vers six destinations. Mise en place des pages HTML/CSS, développement des classes Java pour la gestion des réservations.</div>
+          </div>
+          <div class="bloc-info mission">
+            <span class="icon">🎯</span>
+            <div><strong>Mes Missions :</strong>
+              <ul>
+                <li>Intégrer les pages principales en HTML/CSS</li>
+                <li>Gérer la responsive et l'accessibilité</li>
+              </ul>
+            </div>
+          </div>
+          <div class="carte-tech">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">Java</span>
+          </div>
         </div>
       </a>
-      <!-- 2023 -->
-      <a href="Projets/projet%202%20booki/index.html" class="carte">
-        <iframe class="carte-iframe" src="Projets/projet%202%20booki/index.html" title="Aperçu du site Booki" loading="lazy"></iframe>
-        <h3>Booki</h3>
-        <div class="bloc-info annee-projet">
-          <span class="icon">📅</span>
-          <div><strong>Année :</strong> 2023</div>
-        </div>
-        <span class="badge-contexte">Contexte : Projet simulant une expérience en alternance chez Booki, axé sur la création d’un site de recherche d’hébergements et d’activités.</span>
-        <div class="bloc-info sujet">
-          <span class="icon">📄</span>
-          <div><strong>Sujet :</strong> Réalisation d’une interface à partir de maquettes fournies, en veillant à l’accessibilité et à l’adaptabilité aux différents écrans.</div>
-        </div>
-        <div class="bloc-info type-projet">
-          <span class="icon">👥</span>
-          <div><strong>Modalité :</strong> En Solo</div>
-        </div>
-        <div class="bloc-info mission">
-          <span class="icon">🎯</span>
-          <div>
-            <strong>Mes Missions :</strong>
-            <ul>
-              <li>Intégration des maquettes UI en HTML/CSS.</li>
-              <li>Respect de la structure sémantique et de l’accessibilité.</li>
-              <li>Adaptation responsive multi-supports.</li>
-            </ul>
+      </div>
+    </div>
+
+    <!-- 2023 -->
+    <div id="projets-2023" class="projet-annee">
+      <h3 class="annee-title">2023</h3>
+      <div class="projets">
+      <!-- 2023 - Booki -->
+      <a href="Projets/projet%202%20booki/index.html" class="carte" data-year="2023" data-type="solo">
+        <div class="carte-header">
+          <iframe class="carte-iframe" src="Projets/projet%202%20booki/index.html" title="Aperçu du site Booki" loading="lazy"></iframe>
+          <div class="carte-badges">
+            <span class="tag-year">2023</span>
+            <span class="tag-type">En solo</span>
+            <span class="tag-duration">1 mois</span>
           </div>
         </div>
-        <div class="bloc-info technologies">
-          <span class="icon">👨‍💻</span>
-          <div><strong>Technologies :</strong> HTML, CSS</div>
+        <div class="carte-content">
+          <h3>Booki</h3>
+          <div class="bloc-info contexte">
+            <span class="icon">📋</span>
+            <div><strong>Contexte :</strong> Projet simulant une expérience en alternance chez Booki, axé sur la création d'un site de recherche d'hébergements et d'activités.</div>
+          </div>
+          <div class="bloc-info sujet">
+            <span class="icon">📄</span>
+            <div><strong>Sujet :</strong> Réalisation d'une interface à partir de maquettes fournies, en veillant à l'accessibilité et à l'adaptabilité aux différents écrans.</div>
+          </div>
+          <div class="bloc-info mission">
+            <span class="icon">🎯</span>
+            <div><strong>Mes Missions :</strong>
+              <ul>
+                <li>Intégration des maquettes UI en HTML/CSS</li>
+                <li>Respect de la structure sémantique et de l'accessibilité</li>
+                <li>Adaptation responsive multi-supports</li>
+              </ul>
+            </div>
+          </div>
+          <div class="carte-tech">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+          </div>
         </div>
-        <div class="delai">
-          <span class="icon">⏳ Délais de réalisation : </span> 1 mois
+      </a>
+      </div>
+    </div>
+
+    <!-- 2021 -->
+    <div id="projets-2021" class="projet-annee">
+      <h3 class="annee-title">2021</h3>
+      <div class="projets">
+      <!-- 2021 - Mini site web -->
+      <a href="Projets/Mini%20site%20web/index.html" class="carte" data-year="2021" data-type="solo">
+        <div class="carte-header">
+          <iframe class="carte-iframe" src="Projets/Mini%20site%20web/index.html" title="Aperçu du mini site" loading="lazy"></iframe>
+          <div class="carte-badges">
+            <span class="tag-year">2021</span>
+            <span class="tag-type">En solo</span>
+            <span class="tag-duration">3 jours</span>
+          </div>
+        </div>
+        <div class="carte-content">
+          <h3>Site web de jeu vidéo</h3>
+          <div class="bloc-info contexte">
+            <span class="icon">📋</span>
+            <div><strong>Contexte :</strong> Mini-site réalisé pour candidature à Epitech, prototype de 4 pages pour présenter un jeu vidéo.</div>
+          </div>
+          <div class="bloc-info sujet">
+            <span class="icon">📄</span>
+            <div><strong>Sujet :</strong> Présentation du jeu, navigation entre Accueil / Histoire / Personnages / Contact.</div>
+          </div>
+          <div class="bloc-info mission">
+            <span class="icon">🎯</span>
+            <div><strong>Mes Missions :</strong>
+              <ul>
+                <li>Apprentissage via MOOC et réalisation du prototype</li>
+                <li>Conception et développement des 4 pages</li>
+              </ul>
+            </div>
+          </div>
+          <div class="carte-tech">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+          </div>
         </div>
       </a>
 
-      <!-- 2021 -  site -->
-      <a href="Projets/Mini%20site%20web/index.html" class="carte">
-        <iframe class="carte-iframe" src="Projets/Mini%20site%20web/index.html" title="Aperçu du mini site" loading="lazy"></iframe>
-        <h3>Site web de présentation de jeu vidéo – Prototype</h3>
-        <div class="bloc-info annee-projet">
-          <span class="icon">📅</span>
-          <div><strong>Année :</strong> 2021</div>
-        </div>
-        <span class="badge-contexte">Contexte : Mini-site réalisé pour candidature à Epitech, prototype de 4 pages pour présenter un jeu vidéo.</span>
-        <div class="bloc-info sujet">
-          <span class="icon">📄</span>
-          <div><strong>Sujet :</strong> Présentation du jeu, navigation entre Accueil / Histoire / Personnages / Contact.</div>
-        </div>
-        <div class="bloc-info type-projet">
-          <span class="icon">👤</span>
-          <div><strong>Modalité :</strong> En solo</div>
-        </div>
-        <div class="bloc-info mission">
-          <span class="icon">🎯</span>
-          <div>
-            <strong>Mes Missions :</strong>
-            <ul>
-              <li>Apprentissage via MOOC et réalisation du prototype.</li>
-              <li>Conception et développement des 4 pages.</li>
-            </ul>
+      <!-- 2021 - Soirée 1950's -->
+      <a href="Projets/page%20web%20evenement/index.html" class="carte" data-year="2021" data-type="equipe">
+        <div class="carte-header">
+          <iframe class="carte-iframe" src="Projets/page%20web%20evenement/index.html" title="Aperçu de l'événement" loading="lazy"></iframe>
+          <div class="carte-badges">
+            <span class="tag-year">2021</span>
+            <span class="tag-type">En équipe</span>
+            <span class="tag-duration">3 semaines</span>
           </div>
         </div>
-        <div class="bloc-info technologies">
-          <span class="icon">👨‍💻</span>
-          <div><strong>Technologies :</strong> HTML, CSS</div>
-        </div>
-        <div class="delai">
-          <span class="icon">⏳ Délais de réalisation : </span> 3 jours
-        </div>
-      </a>
-
-      <!-- 2021 - Événement (position inversée) -->
-      <a href="Projets/page%20web%20evenement/index.html" class="carte">
-        <iframe class="carte-iframe" src="Projets/page%20web%20evenement/index.html" title="Aperçu de l'événement" loading="lazy"></iframe>
-        <h3>Conception de la page web “Soirée 1950’s” – Ligne Numérique 6</h3>
-        <div class="bloc-info annee-projet">
-          <span class="icon">📅</span>
-          <div><strong>Année :</strong> 2021</div>
-        </div>
-        <span class="badge-contexte">Contexte : Prototype pour un événement rétro (années 50), réalisé en collaboration entre créatifs et développeurs.</span>
-        <div class="bloc-info sujet">
-          <span class="icon">📄</span>
-          <div><strong>Sujet :</strong> Présentation de l’événement, informations pratiques et valorisation de la promo.</div>
-        </div>
-        <div class="bloc-info type-projet">
-          <span class="icon">👥</span>
-          <div><strong>Modalité :</strong> En équipe</div>
-        </div>
-        <div class="bloc-info mission">
-          <span class="icon">🎯</span>
-          <div>
-            <strong>Mes Missions :</strong>
-            <ul>
-              <li>Participation au design et aux maquettes.</li>
-              <li>Début du développement front-end (projet non finalisé en ligne).</li>
-            </ul>
+        <div class="carte-content">
+          <h3>Soirée 1950's</h3>
+          <div class="bloc-info contexte">
+            <span class="icon">📋</span>
+            <div><strong>Contexte :</strong> Prototype pour un événement rétro (années 50), réalisé en collaboration entre créatifs et développeurs.</div>
+          </div>
+          <div class="bloc-info sujet">
+            <span class="icon">📄</span>
+            <div><strong>Sujet :</strong> Présentation de l'événement, informations pratiques et valorisation de la promo.</div>
+          </div>
+          <div class="bloc-info mission">
+            <span class="icon">🎯</span>
+            <div><strong>Mes Missions :</strong>
+              <ul>
+                <li>Participation au design et aux maquettes</li>
+                <li>Début du développement front-end (projet non finalisé en ligne)</li>
+              </ul>
+            </div>
+          </div>
+          <div class="carte-tech">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
           </div>
         </div>
-        <div class="bloc-info technologies">
-          <span class="icon">👨‍💻</span>
-          <div><strong>Technologies :</strong> HTML, CSS</div>
-        </div>
-        <div class="delai">
-          <span class="icon">⏳ Délais de réalisation : </span> 3 semaines (Annulé a cause de la pandémie lié au covid)</div>
       </a>
 
       <!-- 2021 - Challenge -->
-      <a href="Projets/Challenge/Index.html" class="carte">
-        <iframe class="carte-iframe" src="Projets/Challenge/Index.html" title="Aperçu du Challenge" loading="lazy"></iframe>
-        <h3>Challenge</h3>
-        <div class="bloc-info annee-projet">
-          <span class="icon">📅</span>
-          <div><strong>Année :</strong> 2021</div>
-        </div>
-        <span class="badge-contexte">Contexte : Projet rush en équipe autour du concept “Golden Cannelloni”.</span>
-        <div class="bloc-info sujet">
-          <span class="icon">📄</span>
-          <div><strong>Sujet :</strong> Site web centré sur l’univers des cannellonis et une identité visuelle “golden”.</div>
-        </div>
-        <div class="bloc-info type-projet">
-          <span class="icon">👥</span>
-          <div><strong>Modalité :</strong> En équipe (2 développeurs, 2 créatifs)</div>
-        </div>
-        <div class="bloc-info mission">
-          <span class="icon">🎯</span>
-          <div>
-            <strong>Mes Missions :</strong>
-            <ul>
-              <li>Réalisation de la maquette fonctionnelle et intégration front-end avec Bootstrap.</li>
-              <li>Collaboration sur l’UX avec l’équipe créative.</li>
-            </ul>
+      <a href="Projets/Challenge/Index.html" class="carte" data-year="2021" data-type="equipe">
+        <div class="carte-header">
+          <iframe class="carte-iframe" src="Projets/Challenge/Index.html" title="Aperçu du Challenge" loading="lazy"></iframe>
+          <div class="carte-badges">
+            <span class="tag-year">2021</span>
+            <span class="tag-type">En équipe · 4 dev</span>
+            <span class="tag-duration">1 semaine</span>
           </div>
         </div>
-        <div class="bloc-info technologies">
-          <span class="icon">👨‍💻</span>
-          <div><strong>Technologies :</strong> Bootstrap</div>
-        </div>
-        <div class="delai">
-          <span class="icon">⏳ Délais de réalisation : </span> 1 semaine
+        <div class="carte-content">
+          <h3>Golden Cannelloni</h3>
+          <div class="bloc-info contexte">
+            <span class="icon">📋</span>
+            <div><strong>Contexte :</strong> Projet rush en équipe autour du concept "Golden Cannelloni".</div>
+          </div>
+          <div class="bloc-info sujet">
+            <span class="icon">📄</span>
+            <div><strong>Sujet :</strong> Site web centré sur l'univers des cannellonis et une identité visuelle "golden".</div>
+          </div>
+          <div class="bloc-info mission">
+            <span class="icon">🎯</span>
+            <div><strong>Mes Missions :</strong>
+              <ul>
+                <li>Réalisation de la maquette fonctionnelle et intégration front-end avec Bootstrap</li>
+                <li>Collaboration sur l'UX avec l'équipe créative</li>
+              </ul>
+            </div>
+          </div>
+          <div class="carte-tech">
+            <span class="tech-tag">Bootstrap</span>
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+          </div>
         </div>
       </a>
 
-      <!-- À préciser -->
-      <a href="Projets/Cv/index.html" class="carte">
-        <iframe class="carte-iframe" src="Projets/Cv/index.html" title="Aperçu du CV" loading="lazy"></iframe>
-        <h3>CV</h3>
-        <div class="bloc-info annee-projet">
-          <span class="icon">📅</span>
-          <div><strong>Année :</strong> 2021</div>
-        </div>
-        <span class="badge-contexte">Contexte : CV conçu sous forme de site web pour présenter mon profil de manière interactive et moderne.</span>
-        <div class="bloc-info sujet">
-          <span class="icon">📄</span>
-        </div>
-        <div class="bloc-info type-projet">
-          <span class="icon">👤</span>
-          <div><strong>Modalité :</strong> En solo</div>
-        </div>
-        <div class="bloc-info mission">
-          <span class="icon">🎯</span>
-          <div>
-            <strong>Mes Missions :</strong>
-            <ul>
-              <li>Concevoir un CV interactif sous forme de site web.</li>
-              <li>Structurer le contenu et rendre le site responsive.</li>
-            </ul>
+      <!-- 2021 - CV -->
+      <a href="Projets/Cv/index.html" class="carte" data-year="2021" data-type="solo">
+        <div class="carte-header">
+          <iframe class="carte-iframe" src="Projets/Cv/index.html" title="Aperçu du CV" loading="lazy"></iframe>
+          <div class="carte-badges">
+            <span class="tag-year">2021</span>
+            <span class="tag-type">En solo</span>
+            <span class="tag-duration">2 jours</span>
           </div>
         </div>
-        <div class="bloc-info technologies">
-          <span class="icon">👨‍💻</span>
-          <div><strong>Technologies :</strong> HTML, CSS</div>
-        </div>
-        <div class="delai">
-          <span class="icon">⏳ Délais de réalisation : </span> 2 jours
+        <div class="carte-content">
+          <h3>CV Interactif</h3>
+          <div class="bloc-info contexte">
+            <span class="icon">📋</span>
+            <div><strong>Contexte :</strong> CV conçu sous forme de site web pour présenter mon profil de manière interactive et moderne.</div>
+          </div>
+          <div class="bloc-info sujet">
+            <span class="icon">📄</span>
+            <div><strong>Sujet :</strong> Création d'un CV web interactif pour mettre en valeur mon parcours et mes compétences.</div>
+          </div>
+          <div class="bloc-info mission">
+            <span class="icon">🎯</span>
+            <div><strong>Mes Missions :</strong>
+              <ul>
+                <li>Concevoir un CV interactif sous forme de site web</li>
+                <li>Structurer le contenu et rendre le site responsive</li>
+              </ul>
+            </div>
+          </div>
+          <div class="carte-tech">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+          </div>
         </div>
       </a>
-
     </div>
   </section>
 
   <footer>
-    <p>©2025 Caroline</p>
+    <p>©2025 Caroline Biehler · Développeuse Web</p>
   </footer>
 </body>
 </html>
